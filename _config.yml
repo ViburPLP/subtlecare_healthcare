@@ -33,7 +33,7 @@ exclude:
 
 # Include files
 include:
-  - pages
+  - _pages
 
 # Default layouts
 defaults:
