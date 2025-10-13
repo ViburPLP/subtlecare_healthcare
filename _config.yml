@@ -1,0 +1,75 @@
+# Site settings
+title: SubtleCare Healthcare
+description: "Kenya's transparent healthcare revolution. Get quality medical care with upfront pricing, no hidden costs, and WhatsApp support."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # the base hostname & protocol for your site
+
+# Permalink structure
+permalink: /:title/
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Jekyll plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Exclude from processing
+exclude:
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - README.md
+  - css/tailwind.css
+
+# Include files
+include:
+  - _pages
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Site navigation
+navigation:
+  - name: Home
+    url: /home/
+  - name: Packages
+    url: /packages-services/
+  - name: Contact
+    url: /contact-support/
+
+# Site metadata
+author: SubtleCare Healthcare
+email: info@subtlecare.com
+twitter_username: subtlecare
+github_username: subtlecare
+
+# SEO settings
+seo:
+  name: SubtleCare Healthcare
+  links:
+    - https://wa.me/254705435379
+
+# Custom variables
+whatsapp_number: "254705435379"
+company_name: "SubtleCare Healthcare"
+tagline: "Healthcare Without Surprises"

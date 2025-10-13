@@ -1,26 +1,27 @@
+---
+title: Home
+permalink: /home/
+layout: default
+description: "Kenya's transparent healthcare revolution. Get quality medical care with upfront pricing, no hidden costs, and WhatsApp support."
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SubtleCare Healthcare</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <script>
-        // Redirect to homepage after a brief moment
-        window.onload = function() {
-            setTimeout(function() {
-                window.location.href = 'pages/homepage.html';
-            }, 100);
-        };
-    </script>
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}" />
+        {% if jekyll.environment == 'production' %}    
 
+    {% endif %}
 <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsubtlecare7334back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
 </head>
 <body>
     <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif;">
         <div style="text-align: center;">
-            <h1 style="color: #2c5aa0; margin-bottom: 20px;">SubtleCare Healthcare</h1>
+            <h1 style="color: #2c5aa0; margin-bottom: 20px;">{{ site.company_name }}</h1>
             <p style="color: #666; margin-bottom: 30px;">Redirecting to homepage...</p>
             <div style="width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid #2c5aa0; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto;"></div>
         </div>
@@ -32,6 +33,18 @@
             100% { transform: rotate(360deg); }
         }
     </style>
+    
+    <script>
+        // Redirect to homepage after a brief moment
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = '{{ "/packages-services/" | relative_url }}';
+            }, 100);
+        };
+    </script>
+    {% if jekyll.environment != 'production' %}    
+
+    {% endif %}
 <script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
 </body>
 </html>

@@ -1,14 +1,22 @@
+---
+title: Homepage
+permalink: /packages-services/
+layout: default
+description: "Kenya's transparent healthcare revolution. Get quality medical care with upfront pricing, no hidden costs, and WhatsApp support."
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SubtleCare Healthcare - Healthcare Without Surprises</title>
-    <meta name="description" content="Kenya's transparent healthcare revolution. Get quality medical care with upfront pricing, no hidden costs, and WhatsApp support." />
-    <link rel="stylesheet" href="../css/main.css" />
+    <title>{{ site.title }} - {{ site.tagline }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <link rel="stylesheet" href="{{ '../css/main.css' | relative_url }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    {% if jekyll.environment == 'production' %}    
 
+    {% endif %}
 <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsubtlecare7334back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
 </head>
@@ -22,20 +30,20 @@
                     <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
                         <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm4 16h-8v-2h2v-6h-2v-2h6v8h2v2z"/>
                     </svg>
-                    <span class="text-xl font-bold text-primary">SubtleCare</span>
+                    <span class="text-xl font-bold text-primary">{{ site.company_name | split: ' ' | first }}</span>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="homepage.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Home</a>
-                    <a href="packages_services.html" class="text-text-secondary hover:text-primary transition-default">Packages</a>
-                    <a href="contact_support.html" class="text-text-secondary hover:text-primary transition-default">Contact</a>
+                    {% for item in site.navigation %}
+                    <a href="{{ item.url | relative_url }}" class="{% if page.url == item.url %}text-primary font-semibold border-b-2 border-primary pb-1{% else %}text-text-secondary hover:text-primary transition-default{% endif %}">{{ item.name }}</a>
+                    {% endfor %}
                 </div>
 
                 <!-- WhatsApp Button & Mobile Menu -->
                 <div class="flex items-center space-x-4">
                     <!-- WhatsApp Button -->
-                    <a href="https://wa.me/254705435379?text=Hi%20SubtleCare,%20I'm%20interested%20in%20learning%20about%20your%20healthcare%20packages" class="bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition-default flex items-center space-x-2 animate-pulse">
+                    <a href="https://wa.me/{{ site.whatsapp_number }}?text=Hi%20SubtleCare,%20I'm%20interested%20in%20learning%20about%20your%20healthcare%20packages" class="bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition-default flex items-center space-x-2 animate-pulse">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.085"/>
                         </svg>
@@ -54,9 +62,9 @@
             <!-- Mobile Menu -->
             <div class="md:hidden mt-4 pb-4 border-t border-border hidden" id="mobile-menu">
                 <div class="flex flex-col space-y-4 pt-4">
-                    <a href="homepage.html" class="text-primary font-semibold">Home</a>
-                    <a href="packages_services.html" class="text-text-secondary hover:text-primary transition-default">Packages</a>
-                    <a href="contact_support.html" class="text-text-secondary hover:text-primary transition-default">Contact</a>
+                    {% for item in site.navigation %}
+                    <a href="{{ item.url | relative_url }}" class="{% if page.url == item.url %}text-primary font-semibold{% else %}text-text-secondary hover:text-primary transition-default{% endif %}">{{ item.name }}</a>
+                    {% endfor %}
                 </div>
             </div>
         </nav>
@@ -92,10 +100,10 @@
 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="packages_services.html" class="btn-primary text-lg px-8 py-4">
+                    <a href="{{ '/packages-services/' | relative_url }}" class="btn-primary text-lg px-8 py-4">
                         View Packages
                     </a>
-                    <a href="https://wa.me/254705435379?text=Hi%20SubtleCare,%20I'd%20like%20to%20know%20more%20about%20your%20pricing" class="btn-secondary text-lg px-8 py-4 flex items-center space-x-2">
+                    <a href="https://wa.me/{{ site.whatsapp_number }}?text=Hi%20SubtleCare,%20I'd%20like%20to%20know%20more%20about%20your%20pricing" class="btn-secondary text-lg px-8 py-4 flex items-center space-x-2">
                         <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.085"/>
                         </svg>
@@ -149,7 +157,7 @@
             <!-- Interactive Comparison Cards -->
             <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 <!-- Affordable Plan -->
-                <div class="pricing-card group cursor-pointer" onclick="window.location.href='packages_services.html'">
+                <div class="pricing-card group cursor-pointer" onclick="window.location.href='{{ '/packages-services/' | relative_url }}'">
                     <div class="text-center mb-6">
                         <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 transition-default">
                             <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -196,7 +204,7 @@
                 </div>
 
                 <!-- Premium Plan -->
-                <div class="pricing-card group cursor-pointer border-2 border-primary relative" onclick="window.location.href='packages_services.html'">
+                <div class="pricing-card group cursor-pointer border-2 border-primary relative" onclick="window.location.href='{{ '/packages-services/' | relative_url }}'">
                     <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
                         <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
                     </div>
@@ -272,7 +280,7 @@
                     <div class="mt-6 text-center">
                         <div class="text-3xl font-bold text-primary mb-2" id="monthly-cost">KES 2,500</div>
                         <p class="text-text-secondary">Monthly cost for your family</p>
-                        <a href="https://wa.me/254705435379?text=Hi%20SubtleCare,%20I%20calculated%20my%20monthly%20cost%20and%20want%20to%20learn%20more" class="btn-primary mt-4 inline-block">Get Detailed Quote</a>
+                        <a href="https://wa.me/{{ site.whatsapp_number }}?text=Hi%20SubtleCare,%20I%20calculated%20my%20monthly%20cost%20and%20want%20to%20learn%20more" class="btn-primary mt-4 inline-block">Get Detailed Quote</a>
                     </div>
                 </div>
             </div>
@@ -443,7 +451,7 @@
                             </svg>
                         </button>
                         <div class="faq-content hidden px-6 pb-6">
-                            <p class="text-text-secondary">Message us anytime at +254 705 435 379. Our medical support team responds within minutes to help with appointments, emergencies, cost estimates, and health questions. It's like having a healthcare assistant in your pocket.</p>
+                            <p class="text-text-secondary">Message us anytime at +{{ site.whatsapp_number }}. Our medical support team responds within minutes to help with appointments, emergencies, cost estimates, and health questions. It's like having a healthcare assistant in your pocket.</p>
                         </div>
                     </div>
 
@@ -485,13 +493,13 @@
                 Join thousands of Kenyans who've chosen transparent, affordable healthcare. Get started in minutes.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="https://wa.me/254705435379?text=Hi%20SubtleCare,%20I'm%20ready%20to%20join%20and%20want%20to%20get%20started" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-default text-lg flex items-center space-x-2">
+                <a href="https://wa.me/{{ site.whatsapp_number }}?text=Hi%20SubtleCare,%20I'm%20ready%20to%20join%20and%20want%20to%20get%20started" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-default text-lg flex items-center space-x-2">
                     <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.085"/>
                     </svg>
                     <span>Start on WhatsApp</span>
                 </a>
-                <a href="packages_services.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-default text-lg">
+                <a href="{{ '/packages-services/' | relative_url }}" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-default text-lg">
                     Compare Packages
                 </a>
             </div>
@@ -508,11 +516,11 @@
                         <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
                             <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm4 16h-8v-2h2v-6h-2v-2h6v8h2v2z"/>
                         </svg>
-                        <span class="text-xl font-bold">SubtleCare</span>
+                        <span class="text-xl font-bold">{{ site.company_name | split: ' ' | first }}</span>
                     </div>
-                    <p class="text-secondary-400 mb-4">Healthcare Without Surprises. Transparent, affordable, and accessible medical care for all Kenyans.</p>
+                    <p class="text-secondary-400 mb-4">{{ site.tagline }}. Transparent, affordable, and accessible medical care for all Kenyans.</p>
                     <div class="flex space-x-4">
-                        <a href="https://wa.me/254705435379" class="text-secondary-400 hover:text-white transition-default">
+                        <a href="https://wa.me/{{ site.whatsapp_number }}" class="text-secondary-400 hover:text-white transition-default">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.085"/>
                             </svg>
@@ -524,9 +532,9 @@
                 <div>
                     <h4 class="font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="homepage.html" class="text-secondary-400 hover:text-white transition-default">Home</a></li>
-                        <li><a href="packages_services.html" class="text-secondary-400 hover:text-white transition-default">Packages</a></li>
-                        <li><a href="contact_support.html" class="text-secondary-400 hover:text-white transition-default">Contact</a></li>
+                        {% for item in site.navigation %}
+                        <li><a href="{{ item.url | relative_url }}" class="text-secondary-400 hover:text-white transition-default">{{ item.name }}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
 
@@ -545,7 +553,7 @@
                 <div>
                     <h4 class="font-semibold mb-4">Contact</h4>
                     <ul class="space-y-2">
-                        <li class="text-secondary-400">WhatsApp: +254 705 435 379</li>
+                        <li class="text-secondary-400">WhatsApp: +{{ site.whatsapp_number }}</li>
                         <li class="text-secondary-400">Available 24/7</li>
                         <li class="text-secondary-400">Nairobi, Kenya</li>
                     </ul>
@@ -553,7 +561,7 @@
             </div>
 
             <div class="border-t border-secondary-800 pt-8 text-center">
-                <p class="text-secondary-400">© 2025 SubtleCare Healthcare. All Rights Reserved.</p>
+                <p class="text-secondary-400">© {{ 'now' | date: '%Y' }} {{ site.company_name }}. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -651,6 +659,9 @@
             });
         });
     </script>
+        {% if jekyll.environment != 'production' %}    
+
+    {% endif %}
 <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
 </html>
