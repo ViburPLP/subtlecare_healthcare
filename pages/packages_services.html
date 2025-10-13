@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Packages & Services - SubtleCare Healthcare</title>
+    <meta name="description" content="Compare our transparent healthcare packages. Affordable Care from KES 2,500 or Premium Care from KES 5,500. No hidden costs, complete coverage details." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsubtlecare7334back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+<script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-accent shadow-subtle border-b border-border">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm4 16h-8v-2h2v-6h-2v-2h6v8h2v2z"/>
+                    </svg>
+                    <span class="text-xl font-bold text-primary">SubtleCare</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-default">Home</a>
+                    <a href="packages_services.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Packages</a>
+                    <a href="contact_support.html" class="text-text-secondary hover:text-primary transition-default">Contact</a>
+                </div>
+
+                <!-- WhatsApp Button & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/254705435379?text=Hi%20SubtleCare,%20I'm%20interested%20in%20learning%20about%20your%20healthcare%20packages" class="bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition-default flex items-center space-x-2 animate-pulse">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.085"/>
+                        </svg>
+                        <span class="hidden sm:inline">Chat Now</span>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden text-text-primary hover:text-primary" id="mobile-menu-btn">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden mt-4 pb-4 border-t border-border hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-default">Home</a>
+                    <a href="packages_services.html" class="text-primary font-semibold">Packages</a>
+                    <a href="contact_support.html" class="text-text-secondary hover:text-primary transition-default">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-accent py-16 overflow-hidden">
+        <div class="absolute inset-0 bg-primary opacity-5"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-text-primary mb-6 animate-fade-in">
+                    Choose Your <span class="text-primary">Healthcare Plan</span>
+                </h1>
+                <p class="text-xl text-text-secondary mb-8 animate-slide-up">
+                    Transparent pricing, comprehensive coverage, and instant WhatsApp support. Compare our plans and find the perfect fit for your family.
+                </p>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-accent rounded-lg p-6 shadow-interactive">
+                        <div class="text-3xl font-bold text-primary mb-2">50+</div>
+                        <div class="text-text-secondary">Partner Facilities</div>
+                    </div>
+                    <div class="bg-accent rounded-lg p-6 shadow-interactive">
+                        <div class="text-3xl font-bold text-primary mb-2">100%</div>
+                        <div class="text-text-secondary">Price Transparency</div>
+                    </div>
+                    <div class="bg-accent rounded-lg p-6 shadow-interactive">
+                        <div class="text-3xl font-bold text-primary mb-2">24/7</div>
+                        <div class="text-text-secondary">WhatsApp Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Filtering System -->
+    <section class="py-12 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-text-primary mb-8 text-center">Find Your Perfect Plan</h2>
+                
+                <!-- Filter Controls -->
+                <div class="bg-accent rounded-lg p-6 shadow-interactive mb-8">
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div>
+                            <label class="block text-text-secondary mb-2 font-semibold">Service Category</label>
+                            <select class="input-field" id="category-filter">
+                                <option value="all">All Services</option>
+                                <option value="basic">Basic Care</option>
+                                <option value="specialist">Specialist Care</option>
+                                <option value="emergency">Emergency Care</option>
+                                <option value="diagnostics">Diagnostics</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-text-secondary mb-2 font-semibold">Monthly Budget</label>
+                            <select class="input-field" id="budget-filter">
+                                <option value="all">Any Budget</option>
+                                <option value="2500">Up to KES 2,500</option>
+                                <option value="5500">Up to KES 5,500</option>
+                                <option value="10000">Up to KES 10,000</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-text-secondary mb-2 font-semibold">Provider Type</label>
+                            <select class="input-field" id="provider-filter">
+                                <option value="all">All Providers</option>
+                                <option value="clinic">Clinics</option>
+                                <option value="hospital">Hospitals</option>
+                                <option value="specialist">Specialist Centers</option>
+                            </select>
+                        </div>
+                        <div class="flex items-end">
+                            <button class="btn-primary w-full flex items-center justify-center space-x-2" id="apply-filters">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.414A1 1 0 013 6.707V4z"/>
+                                </svg>
+                                <span>Apply Filters</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="text-text-secondary">
+                            <span id="results-count">2</span> plans match your criteria
+                        </div>
+                        <button class="text-primary hover:text-primary-700 transition-default" id="reset-filters">
+                            Reset All Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Plan Comparison -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-text-primary mb-6">Compare Our Plans</h2>
+                    <p class="text-xl text-text-secondary">Side-by-side comparison with complete transparency</p>
+                </div>
+
+                <!-- Plan Comparison Cards -->
+                <div class="grid lg:grid-cols-2 gap-8 mb-16" id="plan-comparison">
+                    <!-- Affordable Plan -->
+                    <div class="pricing-card plan-card" data-category="basic" data-budget="2500" data-provider="all">
+                        <div class="text-center mb-6">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-text-primary mb-2">Affordable Care</h3>
+                            <div class="text-4xl font-bold text-primary mb-2">KES 2,500</div>
+                            <p class="text-text-secondary">per month per person</p>
+                        </div>
+
+                        <!-- Service Breakdown -->
+                        <div class="space-y-6 mb-8">
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-3 flex items-center">
+                                    <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Basic Healthcare Services
+                                </h4>
+                                <ul class="space-y-2 ml-7">
+                                    <li class="text-text-secondary">• General consultations (unlimited)</li>
+                                    <li class="text-text-secondary">• Basic diagnostics (blood tests, X-rays)</li>
+                                    <li class="text-text-secondary">• Prescription medications (generic)</li>
+                                    <li class="text-text-secondary">• Preventive care & vaccinations</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-3 flex items-center">
+                                    <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Emergency Coverage
+                                </h4>
+                                <ul class="space-y-2 ml-7">
+                                    <li class="text-text-secondary">• 24/7 emergency room access</li>
+                                    <li class="text-text-secondary">• Ambulance services</li>
+                                    <li class="text-text-secondary">• Emergency surgery (up to KES 100,000)</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-3 flex items-center">
+                                    <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Network Access
+                                </h4>
+                                <ul class="space-y-2 ml-7">
+                                    <li class="text-text-secondary">• 15+ partner clinics</li>
+                                    <li class="text-text-secondary">• 5+ partner hospitals</li>
+                                    <li class="text-text-secondary">• WhatsApp support 24/7</li>
+                                </ul>
+                            </div>
+
+                            <div class="border-t border-border pt-4">
+                                <h4 class="font-semibold text-error mb-3 flex items-center">
+                                    <svg class="w-5 h-5 text-error mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Not Included
+                                </h4>
+                                <ul class="space-y-2 ml-7">
+                                    <li class="text-text-secondary">• Specialist consultations</li>
+                                    <li class="text-text-secondary">• Advanced imaging (MRI, CT)</li>
+                                    <li class="text-text-secondary">• Dental & optical care</li>
+                                    <li class="text-text-secondary">• Cosmetic procedures</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="https://wa.me/254705435379?text=Hi%20SubtleCare,%20I'm%20interested%20in%20the%20Affordable%20Care%20plan%20at%20KES%202,500" class="btn-secondary w-full mb-4">
+                                Choose Affordable Care
+                            </a>
+                            <button class="text-primary hover:text-primary-700 transition-default" onclick="openCalculator('affordable')">
+                                Calculate Family Cost
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Premium Plan -->
+                    <div class="pricing-card plan-card border-2 border-primary relative" data-category="specialist" data-budget="5500" data-provider="all">
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
+                        </div>
+                        
+                        <div class="text-center mb-6">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-text-primary mb-2">Premium Care</h3>
+                            <div class="text-4xl font-bold text-primary mb-2">KES 5,500</div>
+                            <p class="text-text-secondary">per month per person</p>
+                        </div>
+
+                        <!-- Service Breakdown -->
+                        <div class="space-y-6 mb-8">
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-3 flex items-center">
+                                    <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Everything in Affordable Care
+                                </h4>
+                                <p class="text-text-secondary ml-7">Plus all premium benefits below</p>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-3 flex items-center">
+                                    <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Specialist Care
+                                </h4>
+                                <ul class="space-y-2 ml-7">
+                                    <li class="text-text-secondary">• Cardiology, dermatology, orthopedics</li>
+                                    <li class="text-text-secondary">• Gynecology & obstetrics</li>
+                                    <li class="text-text-secondary">• Mental health counseling</li>
+                                    <li class="text-text-secondary">• Physiotherapy sessions</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-3 flex items-center">
+                                    <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Advanced Diagnostics
+                                </h4>
+                                <ul class="space-y-2 ml-7">
+                                    <li class="text-text-secondary">• MRI & CT scans</li>
+                                    <li class="text-text-secondary">• Ultrasounds & echocardiograms</li>
+                                    <li class="text-text-secondary">• Comprehensive blood panels</li>
+                                    <li class="text-text-secondary">• Cancer screening packages</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-3 flex items-center">
+                                    <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Premium Network
+                                </h4>
+                                <ul class="space-y-2 ml-7">
+                                    <li class="text-text-secondary">• 50+ premium facilities</li>
+                                    <li class="text-text-secondary">• Private hospital rooms</li>
+                                    <li class="text-text-secondary">• Priority booking & scheduling</li>
+                                    <li class="text-text-secondary">• Dedicated care coordinator</li>
+                                </ul>
+                            </div>
+
+                            <div class="border-t border-border pt-4">
+                                <h4 class="font-semibold text-error mb-3 flex items-center">
+                                    <svg class="w-5 h-5 text-error mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Not Included
+                                </h4>
+                                <ul class="space-y-2 ml-7">
+                                    <li class="text-text-secondary">• Cosmetic procedures</li>
+                                    <li class="text-text-secondary">• Experimental treatments</li>
+                                    <li class="text-text-secondary">• International medical travel</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="https://wa.me/254705435379?text=Hi%20SubtleCare,%20I'm%20interested%20in%20the%20Premium%20Care%20plan%20at%20KES%205,500" class="btn-primary w-full mb-4">
+                                Choose Premium Care
+                            </a>
+                            <button class="text-primary hover:text-primary-700 transition-default" onclick="openCalculator('premium')">
+                                Calculate Family Cost
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Comparison Table -->
+                <div class="bg-accent rounded-lg shadow-interactive overflow-hidden">
+                    <div class="p-6 border-b border-border">
+                        <h3 class="text-2xl font-bold text-text-primary text-center">Quick Comparison</h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-surface">
+                                <tr>
+                                    <th class="text-left p-4 font-semibold text-text-primary">Feature</th>
+                                    <th class="text-center p-4 font-semibold text-text-primary">Affordable Care</th>
+                                    <th class="text-center p-4 font-semibold text-text-primary">Premium Care</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-border">
+                                <tr>
+                                    <td class="p-4 font-medium text-text-primary">Monthly Cost</td>
+                                    <td class="p-4 text-center text-primary font-bold">KES 2,500</td>
+                                    <td class="p-4 text-center text-primary font-bold">KES 5,500</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium text-text-primary">General Consultations</td>
+                                    <td class="p-4 text-center">
+                                        <svg class="w-5 h-5 text-success mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </td>
+                                    <td class="p-4 text-center">
+                                        <svg class="w-5 h-5 text-success mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium text-text-primary">Specialist Consultations</td>
+                                    <td class="p-4 text-center">
+                                        <svg class="w-5 h-5 text-error mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </td>
+                                    <td class="p-4 text-center">
+                                        <svg class="w-5 h-5 text-success mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium text-text-primary">Advanced Diagnostics</td>
+                                    <td class="p-4 text-center">
+                                        <svg class="w-5 h-5 text-error mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </td>
+                                    <td class="p-4 text-center">
+                                        <svg class="w-5 h-5 text-success mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium text-text-primary">Partner Facilities</td>
+                                    <td class="p-4 text-center text-text-secondary">15+ clinics</td>
+                                    <td class="p-4 text-center text-text-secondary">50+ facilities</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium text-text-primary">WhatsApp Support</td>
+                                    <td class="p-4 text-center">
+                                        <svg class="w-5 h-5 text-success mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </td>
+                                    <td class="p-4 text-center">
+                                        <svg class="w-5 h-5 text-success mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cost Calculator Modal -->
+    <div class="fixed inset-0 bg-secondary bg-opacity-50 z-50 hidden" id="calculator-modal">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-accent rounded-lg shadow-pricing max-w-2xl w-full max-h-screen overflow-y-auto">
+                <div class="p-6 border-b border-border">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-2xl font-bold text-text-primary">Healthcare Cost Calculator</h3>
+                        <button class="text-text-secondary hover:text-text-primary transition-default" onclick="closeCalculator()">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-text-secondary mb-2 font-semibold">Selected Plan</label>
+                            <div class="input-field bg-surface" id="selected-plan">Affordable Care - KES 2,500</div>
+                        </div>
+                        <div>
+                            <label class="block text-text-secondary mb-2 font-semibold">Family Size</label>
+                            <select class="input-field" id="calc-family-size">
+                                <option value="1">Individual (1 person)</option>
+                                <option value="2">Couple (2 people)</option>
+                                <option value="3">Small Family (3 people)</option>
+                                <option value="4">Family of 4</option>
+                                <option value="5">Family of 5</option>
+                                <option value="6">Large Family (6+ people)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-text-secondary mb-2 font-semibold">Age Range (Primary)</label>
+                            <select class="input-field" id="age-range">
+                                <option value="young">18-35 years</option>
+                                <option value="middle">36-55 years</option>
+                                <option value="senior">56+ years</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-text-secondary mb-2 font-semibold">Health Status</label>
+                            <select class="input-field" id="health-status">
+                                <option value="excellent">Excellent</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair (some conditions)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Scenario Modeling -->
+                    <div class="bg-surface rounded-lg p-4 mb-6">
+                        <h4 class="font-semibold text-text-primary mb-3">Scenario Modeling</h4>
+                        <div class="space-y-3">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-primary" id="scenario-emergency" />
+                                <span class="text-text-secondary">Include emergency fund (recommended)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-primary" id="scenario-maternity" />
+                                <span class="text-text-secondary">Planning for maternity care</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-primary" id="scenario-chronic" />
+                                <span class="text-text-secondary">Managing chronic conditions</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cost Breakdown -->
+                    <div class="bg-primary-50 rounded-lg p-6">
+                        <h4 class="font-bold text-text-primary mb-4 text-xl">Your Healthcare Investment</h4>
+                        
+                        <div class="space-y-3 mb-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Monthly Premium</span>
+                                <span class="font-semibold text-text-primary" id="monthly-premium">KES 2,500</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Family Multiplier</span>
+                                <span class="font-semibold text-text-primary" id="family-multiplier">x1</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Age Adjustment</span>
+                                <span class="font-semibold text-text-primary" id="age-adjustment">+KES 0</span>
+                            </div>
+                            <div class="border-t border-border pt-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-lg font-semibold text-text-primary">Total Monthly Cost</span>
+                                    <span class="text-2xl font-bold text-primary" id="total-monthly">KES 2,500</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div class="bg-accent rounded-lg p-3">
+                                <div class="text-lg font-bold text-primary" id="annual-cost">KES 30,000</div>
+                                <div class="text-sm text-text-secondary">Annual Cost</div>
+                            </div>
+                            <div class="bg-accent rounded-lg p-3">
+                                <div class="text-lg font-bold text-success" id="savings-estimate">KES 15,000</div>
+                                <div class="text-sm text-text-secondary">Est. Annual Savings</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/254705435379?text=Hi%20SubtleCare,%20I%20used%20your%20calculator%20and%20want%20to%20discuss%20my%20healthcare%20plan" class="btn-primary flex-1 text-center">
+                            Get Personalized Quote
+                        </a>
+                        <button class="btn-secondary flex-1" onclick="downloadComparison()">
+                            Download Comparison
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Provider Network Section -->
+    <section class="py-20 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-text-primary mb-6">Our Partner Network</h2>
+                    <p class="text-xl text-text-secondary">Quality healthcare providers across Kenya, vetted for excellence</p>
+                </div>
+
+                <!-- Network Stats -->
+                <div class="grid md:grid-cols-4 gap-6 mb-12">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">50+</div>
+                        <div class="text-text-secondary">Healthcare Facilities</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">200+</div>
+                        <div class="text-text-secondary">Medical Specialists</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">15</div>
+                        <div class="text-text-secondary">Counties Covered</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">24/7</div>
+                        <div class="text-text-secondary">Emergency Access</div>
+                    </div>
+                </div>
+
+                <!-- Featured Partners -->
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="card hover:shadow-interactive transition-default">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Nairobi Hospital" class="w-16 h-16 rounded-lg object-cover mr-4" onerror="this.src='https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div>
+                                <h3 class="font-bold text-text-primary">Nairobi Hospital</h3>
+                                <p class="text-text-secondary">Premium Partner</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li>• Full specialist services</li>
+                            <li>• 24/7 emergency care</li>
+                            <li>• Advanced diagnostics</li>
+                            <li>• Private rooms available</li>
+                        </ul>
+                        <div class="mt-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400 mr-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <span class="text-sm text-text-secondary">4.8/5</span>
+                            </div>
+                            <span class="text-sm text-primary font-semibold">Premium Only</span>
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-interactive transition-default">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Aga Khan Hospital" class="w-16 h-16 rounded-lg object-cover mr-4" onerror="this.src='https://images.pixabay.com/photo/2017/10/04/09/56/laboratory-2815641_1280.jpg'; this.onerror=null;" />
+                            <div>
+                                <h3 class="font-bold text-text-primary">Aga Khan Hospital</h3>
+                                <p class="text-text-secondary">Premium Partner</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li>• Cardiac center excellence</li>
+                            <li>• Cancer treatment facility</li>
+                            <li>• Maternity & pediatrics</li>
+                            <li>• International standards</li>
+                        </ul>
+                        <div class="mt-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400 mr-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <span class="text-sm text-text-secondary">4.9/5</span>
+                            </div>
+                            <span class="text-sm text-primary font-semibold">Premium Only</span>
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-interactive transition-default">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Kenyatta National Hospital" class="w-16 h-16 rounded-lg object-cover mr-4" onerror="this.src='https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div>
+                                <h3 class="font-bold text-text-primary">Kenyatta National Hospital</h3>
+                                <p class="text-text-secondary">Both Plans</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li>• National referral hospital</li>
+                            <li>• Emergency trauma center</li>
+                            <li>• Teaching hospital</li>
+                            <li>• Comprehensive services</li>
+                        </ul>
+                        <div class="mt-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400 mr-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-4 h-4 text-secondary-300" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <span class="text-sm text-text-secondary">4.2/5</span>
+                            </div>
+                            <span class="text-sm text-success font-semibold">Both Plans</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="https://wa.me/254705435379?text=Hi%20SubtleCare,%20I'd%20like%20to%20see%20the%20complete%20list%20of%20partner%20facilities" class="btn-primary">
+                        View All Partners
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-accent">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-text-primary mb-6">Frequently Asked Questions</h2>
+                    <p class="text-xl text-text-secondary">Everything you need to know about our healthcare packages</p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-surface rounded-lg shadow-subtle">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-accent transition-default" data-target="faq-1">
+                            <span class="font-semibold text-text-primary">What's the difference between Affordable and Premium Care?</span>
+                            <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-text-secondary">Affordable Care (KES 2,500/month) covers basic consultations, emergency care, and essential diagnostics at 15+ partner facilities. Premium Care (KES 5,500/month) includes everything in Affordable plus specialist consultations, advanced diagnostics like MRI/CT scans, access to 50+ premium facilities, and priority booking.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-surface rounded-lg shadow-subtle">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-accent transition-default" data-target="faq-2">
+                            <span class="font-semibold text-text-primary">Are there any hidden costs or co-payments?</span>
+                            <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-text-secondary">No hidden costs whatsoever. Your monthly premium covers all included services completely. We provide 100% transparent pricing - you'll know exactly what's covered and what isn't before you enroll. No co-payments, no deductibles, no surprise bills.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-surface rounded-lg shadow-subtle">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-accent transition-default" data-target="faq-3">
+                            <span class="font-semibold text-text-primary">Can I upgrade from Affordable to Premium Care?</span>
+                            <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-text-secondary">Yes! You can upgrade to Premium Care at any time. The upgrade takes effect immediately, and you'll have access to all premium benefits including specialist consultations and advanced diagnostics. Simply message us on WhatsApp to process your upgrade.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-surface rounded-lg shadow-subtle">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-accent transition-default" data-target="faq-4">
+                            <span class="font-semibold text-text-primary">How do family plans work?</span>
+                            <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-text-secondary">Each family member needs their own plan, but we offer family discounts. For families of 3+, you get 10% off total monthly costs. For families of 5+, you get 15% off. Children under 18 receive a 20% discount on their individual plans. Use our calculator above to see your family's exact cost.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-surface rounded-lg shadow-subtle">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-accent transition-default" data-target="faq-5">
+                            <span class="font-semibold text-text-primary">What happens in medical emergencies?</span>
+                            <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-text-secondary">Both plans include 24/7 emergency coverage. Go to any partner facility emergency room - no prior authorization needed. Ambulance services are covered. Emergency surgery is covered up to KES 100,000 for Affordable Care, unlimited for Premium Care. Message us on WhatsApp even during emergencies for immediate assistance.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="bg-surface rounded-lg shadow-subtle">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-accent transition-default" data-target="faq-6">
+                            <span class="font-semibold text-text-primary">How do I book appointments?</span>
+                            <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-text-secondary">Simply message us on WhatsApp at +254 705 435 379. Tell us what type of appointment you need, your preferred location and time. We'll check availability and confirm your booking within minutes. Premium Care members get priority scheduling and can book up to 30 days in advance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Choose Your Healthcare Plan?</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Join thousands of Kenyans who've chosen transparent, affordable healthcare. Get started with a personalized consultation.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/254705435379?text=Hi%20SubtleCare,%20I'm%20ready%20to%20choose%20my%20healthcare%20plan%20and%20need%20guidance" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-default text-lg flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.085"/>
+                    </svg>
+                    <span>Get Personalized Consultation</span>
+                </a>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-default text-lg" onclick="openCalculator('affordable')">
+                    Use Cost Calculator
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 6c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm4 16h-8v-2h2v-6h-2v-2h6v8h2v2z"/>
+                        </svg>
+                        <span class="text-xl font-bold">SubtleCare</span>
+                    </div>
+                    <p class="text-secondary-400 mb-4">Healthcare Without Surprises. Transparent, affordable, and accessible medical care for all Kenyans.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/254705435379" class="text-secondary-400 hover:text-white transition-default">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.085"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-secondary-400 hover:text-white transition-default">Home</a></li>
+                        <li><a href="packages_services.html" class="text-secondary-400 hover:text-white transition-default">Packages</a></li>
+                        <li><a href="contact_support.html" class="text-secondary-400 hover:text-white transition-default">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-semibold mb-4">Our Plans</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-secondary-400">Affordable Care - KES 2,500</span></li>
+                        <li><span class="text-secondary-400">Premium Care - KES 5,500</span></li>
+                        <li><span class="text-secondary-400">Family Discounts Available</span></li>
+                        <li><span class="text-secondary-400">Emergency Coverage</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-secondary-400">WhatsApp: +254 705 435 379</li>
+                        <li class="text-secondary-400">Available 24/7</li>
+                        <li class="text-secondary-400">Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-800 pt-8 text-center">
+                <p class="text-secondary-400">© 2025 SubtleCare Healthcare. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter System
+        let currentPlan = 'affordable';
+        
+        function applyFilters() {
+            const category = document.getElementById('category-filter').value;
+            const budget = document.getElementById('budget-filter').value;
+            const provider = document.getElementById('provider-filter').value;
+            
+            const planCards = document.querySelectorAll('.plan-card');
+            let visibleCount = 0;
+            
+            planCards.forEach(card => {
+                let show = true;
+                
+                if (category !== 'all' && !card.dataset.category.includes(category)) {
+                    show = false;
+                }
+                
+                if (budget !== 'all' && parseInt(card.dataset.budget) > parseInt(budget)) {
+                    show = false;
+                }
+                
+                if (provider !== 'all' && !card.dataset.provider.includes(provider)) {
+                    show = false;
+                }
+                
+                if (show) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            document.getElementById('results-count').textContent = visibleCount;
+        }
+
+        document.getElementById('apply-filters').addEventListener('click', applyFilters);
+        
+        document.getElementById('reset-filters').addEventListener('click', function() {
+            document.getElementById('category-filter').value = 'all';
+            document.getElementById('budget-filter').value = 'all';
+            document.getElementById('provider-filter').value = 'all';
+            applyFilters();
+        });
+
+        // Calculator Modal Functions
+        function openCalculator(plan) {
+            currentPlan = plan;
+            const modal = document.getElementById('calculator-modal');
+            const selectedPlanElement = document.getElementById('selected-plan');
+            
+            if (plan === 'affordable') {
+                selectedPlanElement.textContent = 'Affordable Care - KES 2,500';
+            } else {
+                selectedPlanElement.textContent = 'Premium Care - KES 5,500';
+            }
+            
+            modal.classList.remove('hidden');
+            updateCalculation();
+        }
+
+        function closeCalculator() {
+            document.getElementById('calculator-modal').classList.add('hidden');
+        }
+
+        function updateCalculation() {
+            const baseCost = currentPlan === 'affordable' ? 2500 : 5500;
+            const familySize = parseInt(document.getElementById('calc-family-size').value);
+            const ageRange = document.getElementById('age-range').value;
+            const healthStatus = document.getElementById('health-status').value;
+            
+            // Age adjustments
+            let ageAdjustment = 0;
+            if (ageRange === 'middle') ageAdjustment = 500;
+            if (ageRange === 'senior') ageAdjustment = 1000;
+            
+            // Health status adjustments
+            let healthAdjustment = 0;
+            if (healthStatus === 'fair') healthAdjustment = 300;
+            
+            const adjustedBaseCost = baseCost + ageAdjustment + healthAdjustment;
+            let totalMonthlyCost = adjustedBaseCost * familySize;
+            
+            // Family discounts
+            if (familySize >= 5) {
+                totalMonthlyCost *= 0.85; // 15% discount
+            } else if (familySize >= 3) {
+                totalMonthlyCost *= 0.90; // 10% discount
+            }
+            
+            const annualCost = totalMonthlyCost * 12;
+            const estimatedSavings = annualCost * 0.3; // Estimated 30% savings
+            
+            // Update display
+            document.getElementById('monthly-premium').textContent = `KES ${baseCost.toLocaleString()}`;
+            document.getElementById('family-multiplier').textContent = `x${familySize}`;
+            document.getElementById('age-adjustment').textContent = `+KES ${(ageAdjustment + healthAdjustment).toLocaleString()}`;
+            document.getElementById('total-monthly').textContent = `KES ${Math.round(totalMonthlyCost).toLocaleString()}`;
+            document.getElementById('annual-cost').textContent = `KES ${Math.round(annualCost).toLocaleString()}`;
+            document.getElementById('savings-estimate').textContent = `KES ${Math.round(estimatedSavings).toLocaleString()}`;
+        }
+
+        // Calculator event listeners
+        document.getElementById('calc-family-size').addEventListener('change', updateCalculation);
+        document.getElementById('age-range').addEventListener('change', updateCalculation);
+        document.getElementById('health-status').addEventListener('change', updateCalculation);
+
+        function downloadComparison() {
+            // Create a simple text summary for download
+            const summary = `
+SubtleCare Healthcare Plan Comparison
+
+Selected Plan: ${currentPlan === 'affordable' ? 'Affordable Care' : 'Premium Care'}
+Monthly Cost: KES ${document.getElementById('total-monthly').textContent.replace('KES ', '')}
+Annual Cost: KES ${document.getElementById('annual-cost').textContent.replace('KES ', '')}
+Estimated Savings: KES ${document.getElementById('savings-estimate').textContent.replace('KES ', '')}
+
+Contact us on WhatsApp: +254 705 435 379
+Visit: subtlecare.co.ke
+
+Generated on: ${new Date().toLocaleDateString()}
+            `;
+            
+            const blob = new Blob([summary], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'subtlecare-plan-comparison.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('svg');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('calculator-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeCalculator();
+            }
+        });
+
+        // Initialize filters
+        applyFilters();
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
