@@ -73,3 +73,5 @@ seo:
 whatsapp_number: "254705435379"
 company_name: "SubtleCare Healthcare"
 tagline: "Healthcare Without Surprises"
+
+permalink: /:basename/
