@@ -2,6 +2,8 @@
 title: SubtleCare Healthcare
 description: "Kenya's transparent healthcare revolution. Get quality medical care with upfront pricing, no hidden costs, and WhatsApp support."
 baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://subtlecare.co.ke"
+
 
 # Permalink structure
 permalink: /:title/
@@ -33,7 +35,7 @@ exclude:
 
 # Include files
 include:
-  - _pages
+  - pages
 
 # Default layouts
 defaults:
